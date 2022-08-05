@@ -1,5 +1,6 @@
 import java.io.File
 
+
 lateinit var clean: String
 lateinit var Type: String
 lateinit var Remove: String
@@ -29,6 +30,7 @@ fun sortToArray() {
 
     var InputInfo =
         File("A:\\Home\\Programming Projects\\IntelliJ Project\\codingsimplifier\\src\\main\\resources\\input").readLines() as ArrayList<String>
+
 
     println("how do you want to sort it? [alpha] [length]")
     var type: String = readLine().toString();
