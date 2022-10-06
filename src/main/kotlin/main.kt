@@ -22,14 +22,13 @@ println("What kind of task are you trying to accomplish? [clean] [sort]")
         else -> {
 
         }
-
     }
 }
 
 fun sortToArray() {
 
     var InputInfo =
-        File("A:\\Home\\Programming Projects\\IntelliJ Project\\codingsimplifier\\src\\main\\resources\\input").readLines() as ArrayList<String>
+        File("E:\\Home\\Programming Projects\\IntelliJ Project\\ToArrayConverter\\src\\main\\resources\\input").readLines() as ArrayList<String>
 
 
     println("how do you want to sort it? [alpha] [length]")
@@ -82,7 +81,7 @@ fun sortToArray() {
 
                     finalinfo = format(cleanerArray(finalList, RemAr), Type);
 
-                    File("A:\\Home\\Programming Projects\\IntelliJ Project\\codingsimplifier\\src\\main\\resources\\output").writeText(
+                    File("E:\\Home\\Programming Projects\\IntelliJ Project\\ToArrayConverter\\src\\main\\resources\\output").writeText(
                         finalinfo
                     )
                 }
@@ -94,7 +93,7 @@ fun sortToArray() {
 
 fun cleanToArray() {
     var InputInfo =
-        File("A:\\Home\\Programming Projects\\IntelliJ Project\\codingsimplifier\\src\\main\\resources\\input").readLines() as ArrayList<String>
+        File("E:\\Home\\Programming Projects\\IntelliJ Project\\ToArrayConverter\\src\\main\\resources\\input").readLines() as ArrayList<String>
     println("does it need cleanup? [yes] [no]")
     clean = readLine().toString()
     println("What type is this? [string] [int]")
@@ -128,11 +127,10 @@ fun cleanToArray() {
         finalinfo = format(InputInfo, Type)
     }
 
-    File("A:\\Home\\Programming Projects\\IntelliJ Project\\codingsimplifier\\src\\main\\resources\\output").writeText(
+    File("E:\\Home\\Programming Projects\\IntelliJ Project\\ToArrayConverter\\src\\main\\resources\\output").writeText(
         finalinfo
     )
 }
-
 
 fun cleanerChar(input: String, removable: ArrayList<String>): String {
     var InpAr = arrayListOf<String>()
